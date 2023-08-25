@@ -13,7 +13,7 @@ import BingAIClient from '../src/BingAIClient.js';
 dotenv.config('.env');
 
 const arg = process.argv.find(_arg => _arg.startsWith('--settings'));
-const path = arg?.split('=')[1] ?? './settings.js';
+const path = 'settings.js';
 
 let settings;
 if (fs.existsSync(path)) {
