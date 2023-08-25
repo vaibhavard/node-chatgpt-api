@@ -9,8 +9,8 @@
   },
   "scripts": {
     "test": "npx eslint .",
-    "start": "node bin/server.js",
-    "server": "node bin/server.js",
+    "start": "node bin/server.js --settings=settings.js",
+    "server": "node bin/server.js --settings=settings.js",
     "cli": "node bin/cli.js",
     "dev:debug:server": "nodemon --ignore cache.json --inspect=0.0.0.0:9229 bin/server.js",
     "dev:debug:cli": "nodemon --ignore cache.json --inspect=0.0.0.0:9228 bin/cli.js"
