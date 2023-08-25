@@ -22,9 +22,9 @@ if (fs.existsSync(path)) {
     settings = (await import(pathToFileURL(fullPath).toString())).default;
 } else {
     if (arg) {
-        console.error('Error: the file specified by the --settings parameter does not exist.');
+        console.log('Error: the file specified by the --settings parameter does not exist.');
     } else {
-        console.error('Error: the settings.js file does not exist.');
+        console.log('Error: the settings.js file does not exist.');
     }
     process.exit(1);
 }
